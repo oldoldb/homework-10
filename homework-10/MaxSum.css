@@ -1,0 +1,77 @@
+.MainTitle {
+    font-family: 微软雅黑;
+    font-size: xx-large;
+    text-align: center;
+}
+
+#TextInterval {
+    width: 47px;
+}
+
+.SubTitle {
+    font-family: 微软雅黑;
+    font-size: large;
+}
+
+body {
+    background-image: url("background.png");
+    background-repeat: no-repeat;
+    background-color: #8CBF26;
+}
+
+tr, td, tb, .Init {
+    font-family: 微软雅黑;
+    font-style: normal;
+    font-weight: normal;
+    color: #FFFFFF;
+    font-size: 20px;
+    background-color: #1BA1E2;
+    border: hidden;
+    text-align: center;
+}
+
+.HighLight {
+    background-color: #A200FF;
+    border-color: white;
+    border: none;
+}
+
+.MaxSum {
+    /*    background-color: #FF0097;*/
+    border: solid;
+}
+
+.MaxSumAndHighLight {
+    background-color: #A200FF;
+    border-color: white;
+    border: solid;
+}
+
+#ButtonPause {
+    width: 90px;
+}
+
+#TextCol {
+    width: 148px;
+    margin-left: 9px;
+}
+
+#TextRow {
+    width: 148px;
+}
+
+.MyText {
+    font-family: 微软雅黑;
+    font-size: large;
+    text-align: center;
+}
+
+#TextArea1 {
+    height: 200px;
+    width: 200px;
+}
+
+#TextAreaArray {
+    height: 151px;
+    width: 180px;
+}

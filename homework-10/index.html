@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="MaxSum.css" rel="stylesheet" type="text/css" />
+    <!--<style type="text/css" >   
+    </style>-->
+    <!-- <script type="text/javascript" src="homework-10.js"></script>-->
+    <script type="text/javascript" src="Declaration.js"></script>
+    <script type="text/javascript" src="BasicFunction.js"></script>
+    <script type="text/javascript" src="MaxSum.js"></script>
+    <script type="text/javascript" src="State.js"></script>
+    <script type="text/javascript" src="ButtonEvent.js"></script>
+    <script type="text/javascript" src="Check.js"></script>
+
+</head>
+<body>
+    <p class="MainTitle">最大子数组演示页面</p>
+    <p class="MainTitle">&nbsp;</p>
+    <p class="MainTitle">
+        最大和 :
+        <input id="TextMaxSum" type="text" disabled="disabled" class="MyText" />
+    </p>
+    <p class="SubTitle">
+        ROW:&nbsp;&nbsp; 
+        <input id="TextRow" type="text" class="MyText" />
+        <input id="RadioManual" checked name="RadioStartMode" type="radio" value="V1" onclick="RadioManualClicked()" />单步执行&nbsp; 
+        <input id="ButtonPrev" type="button" value="&lt;&lt;" onclick="ShowPrevState()" class="MyText" /><input id="ButtonNext" type="button" value="&gt;&gt;" onclick="    ShowNextState()" class="MyText" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="MyText">暂定最大子数组(白边区域)&nbsp;:</span>&nbsp;
+        <input id="TextTempMax" class="MyText" type="text" disabled="disabled" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+
+    </p>
+    <p class="SubTitle">
+        COL&nbsp; : 
+        <input id="TextCol" type="text" class="MyText" />
+        <input id="RadioAuto" name="RadioStartMode" type="radio" value="V1" onclick="RadioAutoClicked()" />自动运行&nbsp;
+        <input id="ButtonPause" type="button" value="Pause" disabled="disabled" onclick="ButtonPauseClicked()" class="MyText" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="MyText">当前计算子数组(紫色区域) : </span>
+        &nbsp;<input id="TextTempRun" class="MyText" type="text" disabled="disabled" />
+    </p>
+    <p class="SubTitle">
+        <span class="MyText">Interval(建议填写100-3000之间) :</span>
+        <input id="TextInterval" type="text" disabled="disabled" class="MyText" />
+        <span class="MyText">单位 : ms&nbsp;&nbsp; </span>
+    </p>
+    <p>
+        <input id="RadioDim1" checked="true" class="MyText" name="RadioLogicMode" type="radio" value="V1" /><span class="MyText">一维数组</span>
+        <input id="RadioDim2" checked="true" class="MyText" name="RadioLogicMode" type="radio" value="V1" /><span class="MyText">二维数组</span>
+        <input id="RadioDim2H" checked="true" class="MyText" name="RadioLogicMode" type="radio" value="V1" /><span class="MyText">二维数组(水平相连)</span>
+        <input id="RadioDim2V" checked="true" class="MyText" name="RadioLogicMode" type="radio" value="V1" /><span class="MyText">二维数组(垂直相连)</span>
+        <input id="RadioDim2VH" checked="true" class="MyText" name="RadioLogicMode" type="radio" value="V1" /><span class="MyText">二维数组(水平垂直相连)</span>
+        <input id="RadioDim2A" checked="true" class="MyText" name="RadioLogicMode" type="radio" value="V1" /><span class="MyText"> 二维数组(联通)</span>
+        <input id="RadioDim2AVH" checked="true" class="MyText" name="RadioLogicMode" type="radio" value="V1" /><span class="MyText">二维数组（上下左右都联通）</span>
+    </p>
+    <p>
+        <input id="ButtonRandom" type="button" value="生成随机数组" onclick="ButtonRandomClicked()" class="SubTitle" />
+        <input id="ButtonNormal" class="MyText" type="button" value="输入指定数组" onclick="ButtonNormalClicked()" />
+        <input id="ButtonStart" type="button" value="开始模拟" disabled="disabled" onclick="ButtonStartClicked()" class="SubTitle" />
+
+    </p>
+</body>
+</html>
